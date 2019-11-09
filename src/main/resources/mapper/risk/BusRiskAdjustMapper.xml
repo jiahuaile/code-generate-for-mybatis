@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.risk.mapper.BusRiskAdjustMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.risk.aml.model.entity.BusRiskAdjust">
+		<id column="id" property="id" />
+		<result column="bus_id" property="busId" />
+		<result column="curr_level" property="currLevel" />
+		<result column="adjust_level" property="adjustLevel" />
+		<result column="next_eval_date" property="nextEvalDate" />
+		<result column="cause_type" property="causeType" />
+		<result column="cause_detail" property="causeDetail" />
+		<result column="attach_id" property="attachId" />
+		<result column="attach_name" property="attachName" />
+		<result column="adj_status" property="adjStatus" />
+		<result column="adj_workflow" property="adjWorkflow" />
+		<result column="create_time" property="createTime" />
+		<result column="creator" property="creator" />
+		<result column="update_time" property="updateTime" />
+		<result column="updater" property="updater" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, bus_id AS busId, curr_level AS currLevel, adjust_level AS adjustLevel, next_eval_date AS nextEvalDate, cause_type AS causeType, cause_detail AS causeDetail, attach_id AS attachId, attach_name AS attachName, adj_status AS adjStatus, adj_workflow AS adjWorkflow, create_time AS createTime, creator, update_time AS updateTime, updater
+    </sql>
+
+</mapper>

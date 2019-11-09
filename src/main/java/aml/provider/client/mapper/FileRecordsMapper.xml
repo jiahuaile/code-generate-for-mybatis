@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.client.mapper.FileRecordsMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.model.entity.client.FileRecords">
+		<id column="id" property="id" />
+		<result column="bus_id" property="busId" />
+		<result column="uploader" property="uploader" />
+		<result column="fileId" property="fileId" />
+		<result column="filename" property="filename" />
+		<result column="filesize" property="filesize" />
+		<result column="uploadTime" property="uploadTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, bus_id AS busId, uploader, fileId, filename, filesize, uploadTime
+    </sql>
+
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.client.mapper.StanCertMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.client.aml.model.entity.StanCert">
+		<id column="id" property="id" />
+		<result column="ext_cust_no" property="extCustNo" />
+		<result column="ext_system_no" property="extSystemNo" />
+		<result column="csnm" property="csnm" />
+		<result column="cstp" property="cstp" />
+		<result column="citp" property="citp" />
+		<result column="citp_nt" property="citpNt" />
+		<result column="ctid" property="ctid" />
+		<result column="civt" property="civt" />
+		<result column="isnt" property="isnt" />
+		<result column="isut" property="isut" />
+		<result column="isdt" property="isdt" />
+		<result column="remk" property="remk" />
+		<result column="rscd" property="rscd" />
+		<result column="data_updt" property="dataUpdt" />
+		<result column="data_transfer_dt" property="dataTransferDt" />
+		<result column="main_cert_flg" property="mainCertFlg" />
+		<result column="valid_cert_flg" property="validCertFlg" />
+		<result column="init_created_te" property="initCreatedTe" />
+		<result column="init_created_nm" property="initCreatedNm" />
+		<result column="init_created_org" property="initCreatedOrg" />
+		<result column="init_created_org_nm" property="initCreatedOrgNm" />
+		<result column="init_system_id" property="initSystemId" />
+		<result column="init_system_nm" property="initSystemNm" />
+		<result column="init_created_ts" property="initCreatedTs" />
+		<result column="updated_ts" property="updatedTs" />
+		<result column="last_updated_te" property="lastUpdatedTe" />
+		<result column="last_updated_te_nm" property="lastUpdatedTeNm" />
+		<result column="last_updated_org" property="lastUpdatedOrg" />
+		<result column="last_updated_org_nm" property="lastUpdatedOrgNm" />
+		<result column="last_system_id" property="lastSystemId" />
+		<result column="last_system_nm" property="lastSystemNm" />
+		<result column="last_updated_ts" property="lastUpdatedTs" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ext_cust_no AS extCustNo, ext_system_no AS extSystemNo, id, csnm, cstp, citp, citp_nt AS citpNt, ctid, civt, isnt, isut, isdt, remk, rscd, data_updt AS dataUpdt, data_transfer_dt AS dataTransferDt, main_cert_flg AS mainCertFlg, valid_cert_flg AS validCertFlg, init_created_te AS initCreatedTe, init_created_nm AS initCreatedNm, init_created_org AS initCreatedOrg, init_created_org_nm AS initCreatedOrgNm, init_system_id AS initSystemId, init_system_nm AS initSystemNm, init_created_ts AS initCreatedTs, updated_ts AS updatedTs, last_updated_te AS lastUpdatedTe, last_updated_te_nm AS lastUpdatedTeNm, last_updated_org AS lastUpdatedOrg, last_updated_org_nm AS lastUpdatedOrgNm, last_system_id AS lastSystemId, last_system_nm AS lastSystemNm, last_updated_ts AS lastUpdatedTs
+    </sql>
+
+</mapper>

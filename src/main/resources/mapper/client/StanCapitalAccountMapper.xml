@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.client.mapper.StanCapitalAccountMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.client.entity.StanCapitalAccount">
+		<result column="csnm" property="csnm" />
+		<result column="cstp" property="cstp" />
+		<result column="ackd" property="ackd" />
+		<result column="actp" property="actp" />
+		<result column="rsms" property="rsms" />
+		<result column="rstm" property="rstm" />
+		<result column="ccno" property="ccno" />
+		<result column="acst" property="acst" />
+		<result column="optm" property="optm" />
+		<result column="cstm" property="cstm" />
+		<result column="optp" property="optp" />
+		<result column="aban" property="aban" />
+		<result column="abit" property="abit" />
+		<result column="abit_nt" property="abitNt" />
+		<result column="abai" property="abai" />
+		<result column="abvt" property="abvt" />
+		<result column="catp" property="catp" />
+		<result column="cbcn" property="cbcn" />
+		<result column="ctnm" property="ctnm" />
+		<result column="cbno" property="cbno" />
+		<result column="cbnm" property="cbnm" />
+		<result column="caba" property="caba" />
+		<result column="mbrc" property="mbrc" />
+		<result column="rscd" property="rscd" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        csnm, cstp, ackd, actp, rsms, rstm, ccno, acst, optm, cstm, optp, aban, abit, abit_nt AS abitNt, abai, abvt, catp, cbcn, ctnm, cbno, cbnm, caba, mbrc, rscd
+    </sql>
+
+</mapper>

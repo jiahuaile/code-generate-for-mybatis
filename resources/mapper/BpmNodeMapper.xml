@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.BpmNodeMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.BpmNode">
+		<id column="id" property="id" />
+		<result column="task_id" property="taskId" />
+		<result column="document_id" property="documentId" />
+		<result column="node_id" property="nodeId" />
+		<result column="user_id" property="userId" />
+		<result column="status" property="status" />
+		<result column="arrive_time" property="arriveTime" />
+		<result column="handle_time" property="handleTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, task_id AS taskId, document_id AS documentId, node_id AS nodeId, user_id AS userId, status, arrive_time AS arriveTime, handle_time AS handleTime
+    </sql>
+
+</mapper>

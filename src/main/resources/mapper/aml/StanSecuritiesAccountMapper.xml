@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aml.mapper.StanSecuritiesAccountMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.aml.entity.StanSecuritiesAccount">
+		<id column="id" property="id" />
+		<result column="csnm" property="csnm" />
+		<result column="cstp" property="cstp" />
+		<result column="ackd" property="ackd" />
+		<result column="scno" property="scno" />
+		<result column="acst" property="acst" />
+		<result column="optp" property="optp" />
+		<result column="optm" property="optm" />
+		<result column="cstm" property="cstm" />
+		<result column="mbrc" property="mbrc" />
+		<result column="rscd" property="rscd" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, csnm, cstp, ackd, scno, acst, optp, optm, cstm, mbrc, rscd
+    </sql>
+
+</mapper>

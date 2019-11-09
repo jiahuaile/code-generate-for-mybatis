@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.client.mapper.StanContactMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.client.aml.model.entity.StanContact">
+		<id column="id" property="id" />
+		<result column="ext_cust_no" property="extCustNo" />
+		<result column="ext_system_no" property="extSystemNo" />
+		<result column="addr_typ_cd" property="addrTypCd" />
+		<result column="csnm" property="csnm" />
+		<result column="cstp" property="cstp" />
+		<result column="lknm" property="lknm" />
+		<result column="ldut" property="ldut" />
+		<result column="cmbl" property="cmbl" />
+		<result column="ctel" property="ctel" />
+		<result column="ceml" property="ceml" />
+		<result column="cfax" property="cfax" />
+		<result column="remk" property="remk" />
+		<result column="rscd" property="rscd" />
+		<result column="data_updt" property="dataUpdt" />
+		<result column="data_transfer_dt" property="dataTransferDt" />
+		<result column="first_flg" property="firstFlg" />
+		<result column="area_no" property="areaNo" />
+		<result column="network_addr" property="networkAddr" />
+		<result column="init_created_te" property="initCreatedTe" />
+		<result column="init_created_te_nm" property="initCreatedTeNm" />
+		<result column="init_created_org" property="initCreatedOrg" />
+		<result column="init_created_org_nm" property="initCreatedOrgNm" />
+		<result column="init_system_id" property="initSystemId" />
+		<result column="init_system_id_nm" property="initSystemIdNm" />
+		<result column="init_created_ts" property="initCreatedTs" />
+		<result column="updated_ts" property="updatedTs" />
+		<result column="last_updated_te" property="lastUpdatedTe" />
+		<result column="last_updated_te_nm" property="lastUpdatedTeNm" />
+		<result column="last_updated_org" property="lastUpdatedOrg" />
+		<result column="last_updated_org_nm" property="lastUpdatedOrgNm" />
+		<result column="last_system_id" property="lastSystemId" />
+		<result column="last_system_id_nm" property="lastSystemIdNm" />
+		<result column="last_updated_ts" property="lastUpdatedTs" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ext_cust_no AS extCustNo, ext_system_no AS extSystemNo, id, addr_typ_cd AS addrTypCd, csnm, cstp, lknm, ldut, cmbl, ctel, ceml, cfax, remk, rscd, data_updt AS dataUpdt, data_transfer_dt AS dataTransferDt, first_flg AS firstFlg, area_no AS areaNo, network_addr AS networkAddr, init_created_te AS initCreatedTe, init_created_te_nm AS initCreatedTeNm, init_created_org AS initCreatedOrg, init_created_org_nm AS initCreatedOrgNm, init_system_id AS initSystemId, init_system_id_nm AS initSystemIdNm, init_created_ts AS initCreatedTs, updated_ts AS updatedTs, last_updated_te AS lastUpdatedTe, last_updated_te_nm AS lastUpdatedTeNm, last_updated_org AS lastUpdatedOrg, last_updated_org_nm AS lastUpdatedOrgNm, last_system_id AS lastSystemId, last_system_id_nm AS lastSystemIdNm, last_updated_ts AS lastUpdatedTs
+    </sql>
+
+</mapper>

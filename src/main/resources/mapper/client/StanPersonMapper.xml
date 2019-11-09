@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.client.mapper.StanPersonMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.client.entity.StanPerson">
+		<id column="csnm" property="csnm" />
+		<result column="cust_typ_cd" property="custTypCd" />
+		<result column="ctnm" property="ctnm" />
+		<result column="citp" property="citp" />
+		<result column="citp_nt" property="citpNt" />
+		<result column="ctid" property="ctid" />
+		<result column="cten" property="cten" />
+		<result column="cust_short_name" property="custShortName" />
+		<result column="civt" property="civt" />
+		<result column="ctsx" property="ctsx" />
+		<result column="ctnt" property="ctnt" />
+		<result column="ctna" property="ctna" />
+		<result column="ctbd" property="ctbd" />
+		<result column="edct" property="edct" />
+		<result column="ctvc" property="ctvc" />
+		<result column="wkpl" property="wkpl" />
+		<result column="cids" property="cids" />
+		<result column="wkps" property="wkps" />
+		<result column="picm" property="picm" />
+		<result column="ficm" property="ficm" />
+		<result column="mrge" property="mrge" />
+		<result column="adnt" property="adnt" />
+		<result column="adpv" property="adpv" />
+		<result column="adct" property="adct" />
+		<result column="addc" property="addc" />
+		<result column="addr" property="addr" />
+		<result column="pscd" property="pscd" />
+		<result column="cmbl" property="cmbl" />
+		<result column="ctel" property="ctel" />
+		<result column="ceml" property="ceml" />
+		<result column="csio" property="csio" />
+		<result column="strategic_flg" property="strategicFlg" />
+		<result column="act_control_flg" property="actControlFlg" />
+		<result column="indi_typ_cd" property="indiTypCd" />
+		<result column="prof_inve_flg" property="profInveFlg" />
+		<result column="money_risk_lvl_cd" property="moneyRiskLvlCd" />
+		<result column="credit_lvl_cd" property="creditLvlCd" />
+		<result column="credit_score" property="creditScore" />
+		<result column="blacklist_cust_flg" property="blacklistCustFlg" />
+		<result column="trlv" property="trlv" />
+		<result column="rgdt" property="rgdt" />
+		<result column="csdt" property="csdt" />
+		<result column="chnl" property="chnl" />
+		<result column="cmgr" property="cmgr" />
+		<result column="mbrc" property="mbrc" />
+		<result column="securities_code1" property="securitiesCode1" />
+		<result column="ctst" property="ctst" />
+		<result column="remk" property="remk" />
+		<result column="rscd" property="rscd" />
+		<result column="data_updt" property="dataUpdt" />
+		<result column="data_transfer_dt" property="dataTransferDt" />
+		<result column="init_created_te" property="initCreatedTe" />
+		<result column="init_created_org" property="initCreatedOrg" />
+		<result column="init_system_id" property="initSystemId" />
+		<result column="init_created_ts" property="initCreatedTs" />
+		<result column="updated_ts" property="updatedTs" />
+		<result column="last_updated_te" property="lastUpdatedTe" />
+		<result column="last_updated_org" property="lastUpdatedOrg" />
+		<result column="last_system_id" property="lastSystemId" />
+		<result column="last_updated_ts" property="lastUpdatedTs" />
+		<result column="last_updated_te_nm" property="lastUpdatedTeNm" />
+		<result column="last_updated_org_nm" property="lastUpdatedOrgNm" />
+		<result column="last_system_nm" property="lastSystemNm" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        csnm, cust_typ_cd AS custTypCd, ctnm, citp, citp_nt AS citpNt, ctid, cten, cust_short_name AS custShortName, civt, ctsx, ctnt, ctna, ctbd, edct, ctvc, wkpl, cids, wkps, picm, ficm, mrge, adnt, adpv, adct, addc, addr, pscd, cmbl, ctel, ceml, csio, strategic_flg AS strategicFlg, act_control_flg AS actControlFlg, indi_typ_cd AS indiTypCd, prof_inve_flg AS profInveFlg, money_risk_lvl_cd AS moneyRiskLvlCd, credit_lvl_cd AS creditLvlCd, credit_score AS creditScore, blacklist_cust_flg AS blacklistCustFlg, trlv, rgdt, csdt, chnl, cmgr, mbrc, securities_code1 AS securitiesCode1, ctst, remk, rscd, data_updt AS dataUpdt, data_transfer_dt AS dataTransferDt, init_created_te AS initCreatedTe, init_created_org AS initCreatedOrg, init_system_id AS initSystemId, init_created_ts AS initCreatedTs, updated_ts AS updatedTs, last_updated_te AS lastUpdatedTe, last_updated_org AS lastUpdatedOrg, last_system_id AS lastSystemId, last_updated_ts AS lastUpdatedTs, last_updated_te_nm AS lastUpdatedTeNm, last_updated_org_nm AS lastUpdatedOrgNm, last_system_nm AS lastSystemNm
+    </sql>
+
+</mapper>

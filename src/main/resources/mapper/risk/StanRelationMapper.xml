@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.risk.mapper.StanRelationMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.risk.aml.model.entity.StanRelation">
+		<id column="ID" property="id" />
+		<result column="EXT_CUST_NO" property="extCustNo" />
+		<result column="EXT_SYSTEM_NO" property="extSystemNo" />
+		<result column="CSNM" property="csnm" />
+		<result column="CSTP" property="cstp" />
+		<result column="RLTP" property="rltp" />
+		<result column="RCNM" property="rcnm" />
+		<result column="RCTP" property="rctp" />
+		<result column="RLAY" property="rlay" />
+		<result column="RLNM" property="rlnm" />
+		<result column="RCNT" property="rcnt" />
+		<result column="RITP" property="ritp" />
+		<result column="RTID" property="rtid" />
+		<result column="RTVT" property="rtvt" />
+		<result column="GENDER_CD" property="genderCd" />
+		<result column="POSITION_CD" property="positionCd" />
+		<result column="BIRTH_DT" property="birthDt" />
+		<result column="RTEL" property="rtel" />
+		<result column="RADD" property="radd" />
+		<result column="RPRV" property="rprv" />
+		<result column="RCTY" property="rcty" />
+		<result column="RARE" property="rare" />
+		<result column="HPER" property="hper" />
+		<result column="HAMT" property="hamt" />
+		<result column="SHAREHOLD_TYP_CD" property="shareholdTypCd" />
+		<result column="ENTERPRISE_INFO" property="enterpriseInfo" />
+		<result column="BENEFIT_FLG" property="benefitFlg" />
+		<result column="TYPE_VALUE" property="typeValue" />
+		<result column="BFTP" property="bftp" />
+		<result column="STATUS" property="status" />
+		<result column="DEAL_STATUS" property="dealStatus" />
+		<result column="REMK" property="remk" />
+		<result column="RSCD" property="rscd" />
+		<result column="data_updt" property="dataUpdt" />
+		<result column="data_transfer_dt" property="dataTransferDt" />
+		<result column="INIT_CREATED_TE" property="initCreatedTe" />
+		<result column="INIT_CREATED_TE_MN" property="initCreatedTeMn" />
+		<result column="INIT_CREATED_ORG" property="initCreatedOrg" />
+		<result column="INIT_CREATED_ORG_NM" property="initCreatedOrgNm" />
+		<result column="INIT_SYSTEM_ID" property="initSystemId" />
+		<result column="INIT_SYSTEM_ID_NM" property="initSystemIdNm" />
+		<result column="INIT_CREATED_TS" property="initCreatedTs" />
+		<result column="UPDATED_TS" property="updatedTs" />
+		<result column="LAST_UPDATED_TE" property="lastUpdatedTe" />
+		<result column="LAST_UPDATED_TE_NM" property="lastUpdatedTeNm" />
+		<result column="LAST_UPDATED_ORG" property="lastUpdatedOrg" />
+		<result column="LAST_UPDATED_ORG_NM" property="lastUpdatedOrgNm" />
+		<result column="LAST_SYSTEM_ID" property="lastSystemId" />
+		<result column="LAST_SYSTEM_ID_NM" property="lastSystemIdNm" />
+		<result column="LAST_UPDATED_TS" property="lastUpdatedTs" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EXT_CUST_NO AS extCustNo, EXT_SYSTEM_NO AS extSystemNo, ID AS id, CSNM AS csnm, CSTP AS cstp, RLTP AS rltp, RCNM AS rcnm, RCTP AS rctp, RLAY AS rlay, RLNM AS rlnm, RCNT AS rcnt, RITP AS ritp, RTID AS rtid, RTVT AS rtvt, GENDER_CD AS genderCd, POSITION_CD AS positionCd, BIRTH_DT AS birthDt, RTEL AS rtel, RADD AS radd, RPRV AS rprv, RCTY AS rcty, RARE AS rare, HPER AS hper, HAMT AS hamt, SHAREHOLD_TYP_CD AS shareholdTypCd, ENTERPRISE_INFO AS enterpriseInfo, BENEFIT_FLG AS benefitFlg, TYPE_VALUE AS typeValue, BFTP AS bftp, STATUS AS status, DEAL_STATUS AS dealStatus, REMK AS remk, RSCD AS rscd, data_updt AS dataUpdt, data_transfer_dt AS dataTransferDt, INIT_CREATED_TE AS initCreatedTe, INIT_CREATED_TE_MN AS initCreatedTeMn, INIT_CREATED_ORG AS initCreatedOrg, INIT_CREATED_ORG_NM AS initCreatedOrgNm, INIT_SYSTEM_ID AS initSystemId, INIT_SYSTEM_ID_NM AS initSystemIdNm, INIT_CREATED_TS AS initCreatedTs, UPDATED_TS AS updatedTs, LAST_UPDATED_TE AS lastUpdatedTe, LAST_UPDATED_TE_NM AS lastUpdatedTeNm, LAST_UPDATED_ORG AS lastUpdatedOrg, LAST_UPDATED_ORG_NM AS lastUpdatedOrgNm, LAST_SYSTEM_ID AS lastSystemId, LAST_SYSTEM_ID_NM AS lastSystemIdNm, LAST_UPDATED_TS AS lastUpdatedTs
+    </sql>
+
+</mapper>

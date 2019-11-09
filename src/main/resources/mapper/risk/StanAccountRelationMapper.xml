@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aml.provider.risk.mapper.StanAccountRelationMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="aml.provider.risk.aml.model.entity.StanAccountRelation">
+		<id column="rel_id" property="relId" />
+		<result column="rel_typ_cd" property="relTypCd" />
+		<result column="ext_cust_no" property="extCustNo" />
+		<result column="ext_system_no" property="extSystemNo" />
+		<result column="party_id" property="partyId" />
+		<result column="rel_cust_name" property="relCustName" />
+		<result column="rel_cert_typ_cd" property="relCertTypCd" />
+		<result column="rel_cert_no" property="relCertNo" />
+		<result column="cert_start_dt" property="certStartDt" />
+		<result column="cert_end_dt" property="certEndDt" />
+		<result column="cert_addr" property="certAddr" />
+		<result column="agent_term" property="agentTerm" />
+		<result column="connect_phone" property="connectPhone" />
+		<result column="connect_addr" property="connectAddr" />
+		<result column="fax_no" property="faxNo" />
+		<result column="mobile_phone" property="mobilePhone" />
+		<result column="office_phone" property="officePhone" />
+		<result column="ecif_cust_no" property="ecifCustNo" />
+		<result column="remark_desc" property="remarkDesc" />
+		<result column="init_created_te" property="initCreatedTe" />
+		<result column="init_created_org" property="initCreatedOrg" />
+		<result column="init_system_id" property="initSystemId" />
+		<result column="init_created_ts" property="initCreatedTs" />
+		<result column="updated_ts" property="updatedTs" />
+		<result column="last_updated_te" property="lastUpdatedTe" />
+		<result column="last_updated_org" property="lastUpdatedOrg" />
+		<result column="last_system_id" property="lastSystemId" />
+		<result column="last_updated_ts" property="lastUpdatedTs" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rel_id AS relId, rel_typ_cd AS relTypCd, ext_cust_no AS extCustNo, ext_system_no AS extSystemNo, party_id AS partyId, rel_cust_name AS relCustName, rel_cert_typ_cd AS relCertTypCd, rel_cert_no AS relCertNo, cert_start_dt AS certStartDt, cert_end_dt AS certEndDt, cert_addr AS certAddr, agent_term AS agentTerm, connect_phone AS connectPhone, connect_addr AS connectAddr, fax_no AS faxNo, mobile_phone AS mobilePhone, office_phone AS officePhone, ecif_cust_no AS ecifCustNo, remark_desc AS remarkDesc, init_created_te AS initCreatedTe, init_created_org AS initCreatedOrg, init_system_id AS initSystemId, init_created_ts AS initCreatedTs, updated_ts AS updatedTs, last_updated_te AS lastUpdatedTe, last_updated_org AS lastUpdatedOrg, last_system_id AS lastSystemId, last_updated_ts AS lastUpdatedTs
+    </sql>
+
+</mapper>
